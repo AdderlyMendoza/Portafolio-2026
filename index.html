@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adderly Mendoza — Desarrollador de Software Full Stack</title>
+  <meta name="description" content="Desarrollador de Software Full Stack especializado en sistemas web a medida, automatización y soluciones tecnológicas para empresas e instituciones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain-overlay" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <filter id="grain-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain-filter)"/>
+    </svg>
+  </div>
+
+  <!-- FLOATING AVAILABLE BADGE -->
+  <div class="floating-badge" id="floatingBadge">
+    <img src="assets/images/profile.jpg" class="floating-avatar" alt="" onerror="this.style.display='none'" />
+    <span class="badge-dot"></span>
+    Disponible para proyectos
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-cta">Contrátame</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contrátame</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+
+    <div class="hero-name-row reveal-fade">
+      <span class="hero-name-text">ADDERLY MENDOZA</span>
+      <span class="hero-name-tag">— Puno, Perú</span>
+    </div>
+
+    <div class="hero-main-row">
+      <div class="hero-word hero-word-left reveal-left">
+        <span>FULL</span>
+      </div>
+
+      <div class="hero-card-wrap" id="heroCard">
+        <div class="hero-card">
+          <img src="assets/images/profile.jpg" alt="Adderly Mendoza" class="hero-img" />
+          <div class="hero-img-fallback">AM</div>
+          <div class="hero-card-badge">
+            <span class="badge-dot"></span>
+            Disponible
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-word hero-word-right reveal-right">
+        <span>STACK</span>
+        <p class="hero-side-desc">
+          Transformo necesidades de negocio en soluciones tecnológicas eficientes y escalables.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-dev-row reveal-up">
+      <span>DEVELOPER</span>
+    </div>
+
+    <div class="hero-actions-row reveal-up delay-2">
+      <a href="#proyectos" class="btn-primary">Ver proyectos <span class="btn-arrow">→</span></a>
+      <a href="#contacto" class="btn-outline">Solicitar cotización</a>
+      <div class="hero-stats-inline">
+        <span><strong data-count="3">0</strong>+ años</span>
+        <span class="stat-sep">·</span>
+        <span><strong data-count="11">0</strong>+ proyectos</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll reveal-fade delay-4">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01 — Sobre mí</span>
+        <h2 class="section-title">Ingeniero de Sistemas<br />orientado a resultados.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col reveal-left">
+          <div class="about-photo-card">
+            <img src="assets/images/profile.jpg" alt="Adderly Mendoza" onerror="this.style.display='none'" />
+            <div class="about-photo-fallback">AM</div>
+          </div>
+        </div>
+        <div class="about-content reveal-up delay-1">
+          <p>
+            Soy <strong>Ingeniero de Sistemas</strong> con <strong>+3 años</strong> de experiencia desarrollando aplicaciones web y de escritorio. Me especializo en arquitecturas MVC con <strong>Laravel</strong> y <strong>Django</strong> en el Backend, e interfaces interactivas con <strong>Vue.js</strong> y <strong>React.js</strong> en el Frontend.
+          </p>
+          <p>
+            Trabajo con metodologías ágiles como <strong>Scrum y XP</strong>, control de versiones con <strong>Git</strong>, y despliegue en servidores <strong>VPS con Docker</strong>. Mi objetivo es crear soluciones robustas, escalables y fáciles de mantener para empresas, instituciones y emprendedores.
+          </p>
+          <div class="about-actions">
+            <a href="cv_adderly_mendoza.pdf" download class="btn-primary">Descargar CV <span class="btn-arrow">↓</span></a>
+            <a href="https://wa.me/51913073684?text=Hola%2C%20Adderly.%20Acabo%20de%20visitar%20tu%20portafolio%20y%20estoy%20interesado%20en%20contratar%20tus%20servicios.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-ghost">WhatsApp ↗</a>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="stat-num" data-count="3">0</span><span class="stat-suf">+</span>
+              <span>Años exp.</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-num" data-count="11">0</span><span class="stat-suf">+</span>
+              <span>Proyectos</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-num" data-count="5">0</span><span class="stat-suf"></span>
+              <span>Empresas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills reveal-up delay-2">
+          <h3 class="skills-title">Stack tecnológico</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel"/><span>Laravel</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js"/><span>Vue.js</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React"/><span>React</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/django/44B78B" alt="Django"/><span>Django</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"/><span>MySQL</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker"/><span>Docker</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"/><span>Python</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"/><span>Git</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/angular/DD0031" alt="Angular"/><span>Angular</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/php/8993BE" alt="PHP"/><span>PHP</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux"/><span>Linux</span></div>
+            <div class="skill-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"/><span>JavaScript</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section id="servicios" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02 — Servicios</span>
+        <h2 class="section-title">¿Qué puedo construir<br />para tu empresa?</h2>
+      </div>
+
+      <div class="services-accordion">
+        <div class="svc-item reveal-up delay-1">
+          <div class="svc-header">
+            <span class="svc-num">01</span>
+            <h3>Sistemas Web a Medida</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Desarrollo de aplicaciones web empresariales completas: ERP, módulos de gestión, facturación electrónica, control de inventario, portales de clientes y reportes interactivos.</p>
+              <div class="svc-tags"><span>Laravel</span><span>Vue.js</span><span>React</span><span>MySQL</span><span>Docker</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-item reveal-up delay-2">
+          <div class="svc-header">
+            <span class="svc-num">02</span>
+            <h3>Automatización de Procesos</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Reduzco tiempos operativos automatizando tareas: generación de documentos, notificaciones WhatsApp, reportes en PDF/Excel y flujos de trabajo digitales.</p>
+              <div class="svc-tags"><span>Python</span><span>Django</span><span>WhatsApp API</span><span>Scripts</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-item reveal-up delay-3">
+          <div class="svc-header">
+            <span class="svc-num">03</span>
+            <h3>Inteligencia Artificial</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Integración de IA en tus sistemas: reconocimiento facial, procesamiento de imágenes, análisis de datos y modelos de clasificación.</p>
+              <div class="svc-tags"><span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>Tkinter</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-item reveal-up delay-1">
+          <div class="svc-header">
+            <span class="svc-num">04</span>
+            <h3>Bases de Datos</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Diseño, optimización y mantenimiento de bases de datos relacionales. Migración de datos legacy, indexación avanzada y consultas de alto rendimiento.</p>
+              <div class="svc-tags"><span>MySQL</span><span>SQL</span><span>Migrations</span><span>Indexing</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-item reveal-up delay-2">
+          <div class="svc-header">
+            <span class="svc-num">05</span>
+            <h3>Deploy y DevOps</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Configuración de servidores VPS, contenedorización Docker, SSL, CI/CD y mantenimiento de aplicaciones en producción.</p>
+              <div class="svc-tags"><span>Docker</span><span>Linux VPS</span><span>Nginx</span><span>Git</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-item reveal-up delay-3">
+          <div class="svc-header">
+            <span class="svc-num">06</span>
+            <h3>Landing Pages y Portales</h3>
+            <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="svc-body">
+            <div class="svc-body-inner">
+              <p>Diseño y desarrollo de páginas web, landing pages y portales institucionales con foco en conversión y experiencia de usuario.</p>
+              <div class="svc-tags"><span>React</span><span>Tailwind</span><span>Django</span><span>SEO</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-cta reveal-up delay-2">
+        <p>¿Tienes un proyecto en mente?</p>
+        <a href="#contacto" class="btn-primary">Solicitar cotización gratuita <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCIA ========== -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03 — Experiencia</span>
+        <h2 class="section-title">Trayectoria profesional<br />comprobada.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Agosto 2025 — Actualidad</span>
+              <span class="timeline-badge">Actual</span>
+            </div>
+            <h3 class="timeline-role">Ingeniero de Sistemas</h3>
+            <span class="timeline-company">Gobierno Regional de Puno</span>
+            <ul class="timeline-list">
+              <li>Mejora y mantenimiento de sistemas informáticos institucionales.</li>
+              <li>Implementé digitalización de papeletas de salida con firma digital — plan Cero Papel.</li>
+              <li>Digitalización de reportes de almacén: reducción del <strong>95% en consumo de papel</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left delay-1">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span class="timeline-date">Marzo 2024 — Julio 2025</span></div>
+            <h3 class="timeline-role">Ingeniero de Sistemas</h3>
+            <span class="timeline-company">Dirección de Admisión — UNA PUNO</span>
+            <ul class="timeline-list">
+              <li>Sistema de evaluación de exámenes por áreas con ponderación automática.</li>
+              <li>Reducción del <strong>50% en tiempo</strong> de creación de tipos de prueba (P, Q, R, S, T).</li>
+              <li>Mantenimiento y actualización de la página web institucional.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left delay-2">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span class="timeline-date">Agosto 2023 — Febrero 2024</span></div>
+            <h3 class="timeline-role">Ingeniero de Sistemas</h3>
+            <span class="timeline-company">MICON SAC</span>
+            <ul class="timeline-list">
+              <li>Sistema de control de asistencias para gestión de recursos humanos.</li>
+              <li>Script de automatización de documentos: reducción del <strong>75% del tiempo</strong> del proceso.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left delay-3">
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span class="timeline-date">Abril — Agosto 2023</span></div>
+            <h3 class="timeline-role">Practicante — Ingeniero de Sistemas</h3>
+            <span class="timeline-company">Gobierno Regional de Puno</span>
+            <ul class="timeline-list">
+              <li>Sistema de aleatorizador de exámenes de admisión.</li>
+              <li>Sistema de calificación automatizada de exámenes simulacro.</li>
+              <li>Soporte y mantenimiento de software y hardware.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-more reveal-up">
+        <button class="btn-outline" id="verMasExpBtn">
+          Ver 2 experiencias más <span class="btn-arrow">↓</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYECTOS ========== -->
+  <section id="proyectos" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04 — Proyectos</span>
+        <h2 class="section-title">Trabajo que habla<br />por sí solo.</h2>
+      </div>
+      <div class="projects-filter reveal-up delay-1">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ia">IA</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal-up delay-1" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://miconsac.org/" target="_blank" class="project-link">Ver proyecto ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#1e3a5f,#0f2035)"><span>MICON</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>VueJs</span><span>Laravel</span><span>MySQL</span><span>Docker</span></div><h3>Sistema Gestión de Clientes y Pagos — MICON</h3><p>Sistema web en producción para control de clientes y pagos, mejorando la experiencia de compra.</p><a href="https://miconsac.org/" target="_blank" class="project-link-inline">miconsac.org ↗</a></div>
+        </div>
+        <div class="project-card reveal-up delay-2" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://sistemas.regionpuno.gob.pe/karen" target="_blank" class="project-link">Ver proyecto ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#1a3a2a,#0d2018)"><span>GORE PUNO</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Angular</span><span>Laravel</span><span>MySQL</span><span>Tailwind</span></div><h3>Gestión de Movimientos de Almacén</h3><p>Mantenimiento y funcionalidades para optimizar la gestión de almacén del Gobierno Regional.</p><a href="https://sistemas.regionpuno.gob.pe/karen" target="_blank" class="project-link-inline">Ver sistema ↗</a></div>
+        </div>
+        <div class="project-card reveal-up delay-3" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://congreso-cimac.onrender.com" target="_blank" class="project-link">Ver proyecto ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#3a1a5f,#200d35)"><span>CIMAC 2025</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Django</span><span>MySQL</span><span>Tailwind</span></div><h3>Sistema para el CIMAC 2025</h3><p>Landing page, registro de participantes con control de inscripciones, pagos y asistencia.</p><div class="project-link-group"><a href="https://congreso-cimac.onrender.com" target="_blank" class="project-link-inline">Demo ↗</a><a href="https://github.com/AdderlyMendoza/congreso-fismat" target="_blank" class="project-link-inline">GitHub ↗</a></div></div>
+        </div>
+        <div class="project-card reveal-up delay-1" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://adderlymendoza.github.io/Netflix-Clone-Frontend/" target="_blank" class="project-link">Ver proyecto ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#5f1a1a,#350d0d)"><span>NETFLIX CLONE</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>React.js</span><span>Tailwind</span></div><h3>Netflix Clone — FrontEnd</h3><p>Clon del frontend de Netflix con autenticación y visualización de películas en React.</p><div class="project-link-group"><a href="https://adderlymendoza.github.io/Netflix-Clone-Frontend/" target="_blank" class="project-link-inline">Demo ↗</a><a href="https://github.com/AdderlyMendoza/Netflix-Clone-Frontend" target="_blank" class="project-link-inline">GitHub ↗</a></div></div>
+        </div>
+        <div class="project-card reveal-up delay-2" data-category="ia">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://repositorio.unap.edu.pe/handle/20.500.14082/23352" target="_blank" class="project-link">Ver publicación ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#1a4a5f,#0d2530)"><span>REC. FACIAL</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Python</span><span>Tkinter</span><span>IA</span></div><h3>Reconocimiento Facial — UNA PUNO</h3><p>Sistema de identificación de postulantes para prevenir suplantaciones en el examen extraordinario 2024.</p><a href="https://repositorio.unap.edu.pe/handle/20.500.14082/23352" target="_blank" class="project-link-inline">Publicación ↗</a></div>
+        </div>
+        <div class="project-card reveal-up delay-3" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://github.com/AdderlyMendoza/Sis-Calificacion-FULL-STACK" target="_blank" class="project-link">Ver en GitHub ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#2a3a1a,#151e0d)"><span>CALIFICACIÓN</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Laravel</span><span>VueJs</span><span>MySQL</span><span>Tailwind</span></div><h3>Distribución y Calificación de Exámenes</h3><p>Asignación automática de ubicación y tipo de prueba para postulantes. Optimización del proceso de evaluación.</p><a href="https://github.com/AdderlyMendoza/Sis-Calificacion-FULL-STACK" target="_blank" class="project-link-inline">GitHub ↗</a></div>
+        </div>
+        <div class="project-card reveal-up delay-1" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://github.com/AdderlyMendoza/Venta-de-Terrenos-Monaco" target="_blank" class="project-link">Ver en GitHub ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#3a2a1a,#201508)"><span>MÓNACO</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Django</span><span>Tailwind</span><span>JavaScript</span></div><h3>Venta de Terrenos — Mónaco</h3><p>Sistema para separación de terrenos con estados en tiempo real y proceso de separación en línea.</p><a href="https://github.com/AdderlyMendoza/Venta-de-Terrenos-Monaco" target="_blank" class="project-link-inline">GitHub ↗</a></div>
+        </div>
+        <div class="project-card reveal-up delay-2" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><span class="project-link" style="cursor:default;">En desarrollo</span></div><div class="project-placeholder" style="background:linear-gradient(135deg,#1f3f5f,#0a1f30)"><span>INMOBILIARIA</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>VueJs</span><span>Laravel</span><span>Docker</span><span>WhatsApp API</span></div><h3>Sistema para Inmobiliaria Lopez</h3><p>Módulos de clientes, ventas, pagos, eventos, mensajería automatizada y facturación electrónica.</p></div>
+        </div>
+        <div class="project-card reveal-up delay-3" data-category="web">
+          <div class="project-img"><div class="project-img-overlay"><a href="https://github.com/brad-tyler/SisConSur" target="_blank" class="project-link">Ver en GitHub ↗</a></div><div class="project-placeholder" style="background:linear-gradient(135deg,#1a3a3f,#0d1e21)"><span>SALUD</span></div></div>
+          <div class="project-info"><div class="project-tags"><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>Tailwind</span></div><h3>Sistema de Tamizajes — Centro de Salud</h3><p>Sistema eficiente y seguro para la realización de diversos tipos de tamizaje médico, en producción.</p><a href="https://github.com/brad-tyler/SisConSur" target="_blank" class="project-link-inline">GitHub ↗</a></div>
+        </div>
+      </div>
+      <div class="projects-more reveal-up">
+        <button class="btn-outline" id="verMasBtn">
+          Ver 3 proyectos más <span class="btn-arrow">↓</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOGROS ========== -->
+  <section id="logros" class="section section-accent">
+    <div class="container">
+      <div class="logros-grid">
+        <div class="logro-item reveal-up"><span class="logro-number">95<em>%</em></span><p>Reducción en consumo de papel — Gobierno Regional de Puno</p></div>
+        <div class="logro-item reveal-up delay-1"><span class="logro-number">75<em>%</em></span><p>Menos tiempo en generación de documentos — MICON SAC</p></div>
+        <div class="logro-item reveal-up delay-2"><span class="logro-number">50<em>%</em></span><p>Reducción en creación de tipos de prueba — UNA PUNO</p></div>
+        <div class="logro-item reveal-up delay-3"><span class="logro-number">11<em>+</em></span><p>Proyectos de software entregados y en producción</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESO ========== -->
+  <section id="proceso" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05 — Proceso</span>
+        <h2 class="section-title">Cómo trabajo contigo.</h2>
+      </div>
+      <div class="proceso-grid">
+        <div class="proceso-step reveal-up delay-1"><div class="step-number">01</div><h3>Reunión y diagnóstico</h3><p>Escucho tus necesidades, entiendo los procesos de tu empresa y defino el alcance del proyecto junto contigo.</p></div>
+        <div class="proceso-step reveal-up delay-2"><div class="step-number">02</div><h3>Propuesta y cotización</h3><p>Elaboro una propuesta técnica detallada con tiempos, tecnologías y costos. Sin letra pequeña.</p></div>
+        <div class="proceso-step reveal-up delay-3"><div class="step-number">03</div><h3>Desarrollo iterativo</h3><p>Trabajo con metodología ágil, entregando versiones funcionales para revisión y ajuste continuo.</p></div>
+        <div class="proceso-step reveal-up delay-4"><div class="step-number">04</div><h3>Deploy y soporte</h3><p>Despliegue en producción, capacitación del equipo y soporte post-entrega para garantizar el éxito.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06 — Contacto</span>
+        <h2 class="section-title">¿Listo para construir<br />tu sistema?</h2>
+        <p class="section-subtitle">Cuéntame sobre tu proyecto y te envío una propuesta sin costo.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><span class="contact-label">Email</span><a href="mailto:aderly19xd@gmail.com" class="contact-value">aderly19xd@gmail.com</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div><div><span class="contact-label">WhatsApp</span><a href="https://wa.me/51913073684?text=Hola%2C%20Adderly.%20Acabo%20de%20visitar%20tu%20portafolio%20y%20estoy%20interesado%20en%20contratar%20tus%20servicios.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="contact-value">Enviar mensaje</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></div><div><span class="contact-label">GitHub</span><a href="https://github.com/AdderlyMendoza" target="_blank" class="contact-value">AdderlyMendoza</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><span class="contact-label">Ubicación</span><span class="contact-value">Puno, Perú · Trabajo remoto disponible</span></div></div>
+          <div class="contact-ctas">
+            <a href="https://wa.me/51913073684?text=Hola%2C%20Adderly.%20Acabo%20de%20visitar%20tu%20portafolio%20y%20estoy%20interesado%20en%20contratar%20tus%20servicios.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-primary">Agendar reunión <span class="btn-arrow">→</span></a>
+            <a href="cv_adderly_mendoza.pdf" download class="btn-outline">Descargar CV</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required /></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tu@empresa.com" required /></div>
+            <div class="form-group">
+              <label for="tipo">Tipo de proyecto</label>
+              <select id="tipo" name="tipo">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Sistema web a medida">Sistema web a medida</option>
+                <option value="Automatización de procesos">Automatización de procesos</option>
+                <option value="Landing page / Portal web">Landing page / Portal web</option>
+                <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+                <option value="Base de datos">Base de datos / Migración</option>
+                <option value="Mantenimiento / soporte">Mantenimiento / soporte</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="proyecto">Cuéntame sobre tu proyecto</label><textarea id="proyecto" name="proyecto" rows="4" placeholder="Describe brevemente qué necesitas desarrollar..." required></textarea></div>
+            <button type="submit" class="btn-primary btn-full">Enviar mensaje <span class="btn-arrow">→</span></button>
+            <p class="form-note">Te respondo en menos de 24 horas.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">Adderly Mendoza © 2026 · Desarrollador Full Stack · Puno, Perú</p>
+        <div class="footer-links">
+          <a href="https://github.com/AdderlyMendoza" target="_blank">GitHub</a>
+          <a href="mailto:aderly19xd@gmail.com">Email</a>
+          <a href="https://wa.me/51913073684?text=Hola%2C%20Adderly.%20Acabo%20de%20visitar%20tu%20portafolio%20y%20estoy%20interesado%20en%20contratar%20tus%20servicios.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
